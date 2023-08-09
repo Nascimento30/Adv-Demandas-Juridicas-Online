@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADV Demandas Juridicas Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.11.0/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+        function efeitos() {
+            const defaults = {
+                spread: 360,
+                ticks: 200,
+                gravity: 0,
+                decay: 0.90,
+                startVelocity: 30,
+            };
+
+            function shoot() {
+                confetti({
+                    ...defaults,
+                    particleCount: 30,
+                    scalar: 1.2,
+                    shapes: ["circle", "square"],
+                    colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+                });
+
+                confetti({
+                    ...defaults,
+                    particleCount: 20,
+                    scalar: 2,
+                    shapes: ["text"],
+                    shapeOptions: {
+                        text: {
+                            value: ["👨‍⚖️⚖️🎉👏🧑‍"],
+                        },
+                    },
+                });
+            }
+
+            setTimeout(shoot, 0);
+            setTimeout(shoot, 100);
+            setTimeout(shoot, 200);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="estilo1_cabecalho"> <!-- 1ª PARTE DO CABEÇALHO -->
+            <a id="estilo_link_home" href="index.html">
+                <div id="caixa_tamanho_logo">
+                    <img src="imagens/deusa1.png" width="100%" height="100%">
+                </div>
+            </a>
+        </div>
+
+        <nav> <!-- 2ª PARTE DO CABEÇALHO -->
+            <a id="estilo_links_nav" href="cadastre-se.html">Cadastre-se</a>
+            <a id="estilo_links_nav" href="servicos.html">Serviços Ofertados</a>
+            <a id="estilo_links_nav" href="beneficios.html">Benefícios</a>
+            <a id="estilo_links_nav" href="demanda.html">Apresente sua Demanda</a>
+            <a id="estilo_links_nav" href="sobre.html"> Sobre</a>
+        </nav>
+
+        <section id="cabecalho3"> <!-- 3ª PARTE DO CABEÇALHO -->
+            <div>
+                <h3>Contatos:</h3>
+            </div>
+            <a class="estilo_links_contatos" href="">
+                <div class="caixa_tamanho_contatos">
+                    <img src="imagens/instagram_logo.png" width="100%" height="100%">
+                </div>
+            </a>
+            <a class="estilo_links_contatos" href="">
+                <div class="caixa_tamanho_contatos">
+                    <img src="imagens/whatsapp_logo.png" width="100%" height="100%">
+                </div>
+            </a>
+        </section>
+    </header>
+    <main>
+        <div id="titulo_caixa_texto_cadastrese">
+            <h1> Cadastre-se </h1>
+        </div>
+        <div id="main_index">
+            <!-- informações de dados pessoais sensiveis-->
+            <form id="estilo_formulario" action="cadastrese.php">
+                <fieldset class="estilo_campos">
+                    <legend> Dados Pessoais:</legend>
+                    <fieldset class="estilo_campos">
+
+                    <legend> Dados de Acesso:</legend>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                    <label for="email"> E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" minlength="4" maxlength="8" required>
+
+                    <div>
+                        <input type="radio" name="cpf" id="cpf">
+                        <label for="cpf"> Cadastro de Pessoa Física</label>
+                        <input type="radio" name="cnpj" id="cnpj">
+                        <label for="cnpj">Cadastro Nacional de Pessoa Jurídica</label>
+                    </div>
+                    <div>
+                        <label for="cpf"> CPF:</label>
+                        <input type="number" name="cpf" id="cpf">
+                        <label for="cnpj"> CNPJ</label>
+                        <input type="number" name="cnpj" id="cnpj">
+                    </div>
+
+                    <!-- informações de sexo-->
+
+                    <div>
+                        <input type="radio" name="sexo" id="sexo_masculino">
+                        <label for="sexo_masculino">Sexo Masculino</label>
+                        <input type="radio" name="sexo" id="sexo_feminino">
+                        <label for="sexo_masculino">Sexo Feminino</label>
+                    </div>
+
+                    <!-- informações de estado-->
+
+                    <div class="estilo_input">
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+                            <option value="espirito_santo">ES</option>
+                            <option value="tocantins">TO</option>
+                            <option value="minas_gerais">MG</option>
+                            <option value="rio_de_janeiro">RJ</option>
+                            <option value="sao_paulo">SP</option>
+                            <option value="santa_catarina"> SC</option>
+                        </select>
+                    </div>
+                    <div>
+                        <legend> Deseja: </legend>
+                        <input type="radio" name="proponente" id="proponente">
+                        <label for="proponente">Propor Demanda</label>
+                        <input type="radio" name="aceitante" id="aceitante">
+                        <label for="aceitante">Aceitar Demanda</label><br>
+                    </div>
+                </fieldset>
+                <fieldset class="estilo_formulario">
+                    <!-- informações gerais de serviço-->
+                    <legend> Serviços :</legend>
+                    <input type="checkbox" id="cartorio" name="cartorio" value="cartorio">
+                    <label for="cartorio"> Cartório</label><br>
+                    <input type="checkbox" id="preposto" name="preposto" value="preposto">
+                    <label for="preposto"> Preposto</label><br>
+                    <input type="checkbox" id="consultoria" name="consultoria" value="consultoria">
+                    <label for="consultoria"> Consultoria Jurídica</label><br>
+                    <input type="checkbox" id="parecer" name="parecer" value="parecer">
+                    <label for="parecer"> Parecer Jurídico</label><br>
+                    <input type="checkbox" id="retirada" name="retirada" value="retirada">
+                    <label for="retirada"> Retidada de Documentos</label><br>
+                    <input type="checkbox" id="entrega" name="entrega" value="entrega">
+                    <label for="entrega"> Entrega de Documentos</label><br>
+
+                </fieldset>
+                <!-- informações de contato-->
+
+                <fieldset class="estilo_campos">
+
+                    <legend> Dados de Acesso:</legend>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                    <label for="email"> E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" minlength="4" maxlength="8" required>
+
+                    <div id="estilo_botoes">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar Dados" onclick="efeitos()">
+                    </div>
+                </fieldset>
+            </form>
+          <!-- Imagem de fundo da pagina-->
+        <div>
+            <img src="imagens/trabalho.jpg" height="500px" width="600px" >
+        </div>
+    </main>
+
+    <footer>
+        <div id="estilo1_rodape">
+            <p class="titulo">
+                <strong>Nossa Missão </strong> <br> Uma plataforma desenvolvida com objetivo de aproximar prestadores de
+                serviços no campo jurídico e clientes com demandas fora de sua comarca.
+            </p>
+        </div>
+
+        <div id="estilo3_rodape">
+            <h2> Telefones:</h2>
+            <p> (27)98872-7514 <br> (27)99865-0625</p>
+        </div>
+
+        <div id="estilo2_rodape">
+            <h2> Desenvolvido por Claudiene Nascimento</h2>
+        </div>
+    </footer>
+</body>
+
+</html>

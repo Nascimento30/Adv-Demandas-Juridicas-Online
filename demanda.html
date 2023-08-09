@@ -82,87 +82,87 @@
         </section>
     </header>
     <main>
-        <div id="titulo_caixa_texto_cadastrese">
-            <h1> Apresente sua Demanda </h1>
-        </div>
-        <div id="main_index">
-            <!-- informações de dados pessoais sensiveis-->
-            <form id="estilo_formulario" action="cadastrese.php">
-                <fieldset class="estilo_campos">
-                    <legend> Dados Pessoais:</legend>
-                    <fieldset class="estilo_campos">
-
-                    <legend> Dados de Acesso:</legend>
-                   
-                    <label for="email"> E-mail:</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" minlength="4" maxlength="8" required>
-
-                    <div>
-                        <input type="radio" name="cpf" id="cpf">
-                        <label for="cpf"> Cadastro de Pessoa Física</label>
-                        <input type="radio" name="cnpj" id="cnpj">
-                        <label for="cnpj">Cadastro Nacional de Pessoa Jurídica</label>
-                    </div>
-                    <div>
-                        <label for="cpf"> CPF:</label>
-                        <input type="number" name="cpf" id="cpf">
-                        <label for="cnpj"> CNPJ</label>
-                        <input type="number" name="cnpj" id="cnpj">
-                    </div>
-
-                    <!-- informações de estado-->
-
-                    <div class="estilo_input">
-                        <label for="estado">Estado:</label>
-                        <select name="estado" id="estado">
-                            <option value="espirito_santo">ES</option>
-                            <option value="tocantins">TO</option>
-                            <option value="minas_gerais">MG</option>
-                            <option value="rio_de_janeiro">RJ</option>
-                            <option value="sao_paulo">SP</option>
-                            <option value="santa_catarina"> SC</option>
-                        </select>
-                    </div>
-                    <div>
-                        <legend> Deseja: </legend>
-                        <input type="radio" name="proponente" id="proponente">
-                        <label for="proponente">Propor Demanda</label>
-                        <input type="radio" name="aceitante" id="aceitante">
-                        <label for="aceitante">Aceitar Demanda</label><br>
-                    </div>
-               
-                <div class="estilo_formulario">
-                    <!-- informações gerais de serviço-->
-                    <legend> Serviços :</legend>
-                    <input type="checkbox" id="cartorio" name="cartorio" value="cartorio">
-                    <label for="cartorio"> Cartório</label><br>
-                    <input type="checkbox" id="preposto" name="preposto" value="preposto">
-                    <label for="preposto"> Preposto</label><br>
-                    <input type="checkbox" id="consultoria" name="consultoria" value="consultoria">
-                    <label for="consultoria"> Consultoria Jurídica</label><br>
-                    <input type="checkbox" id="parecer" name="parecer" value="parecer">
-                    <label for="parecer"> Parecer Jurídico</label><br>
-                    <input type="checkbox" id="retirada" name="retirada" value="retirada">
-                    <label for="retirada"> Retidada de Documentos</label><br>
-                    <input type="checkbox" id="entrega" name="entrega" value="entrega">
-                    <label for="entrega"> Entrega de Documentos</label><br>
+                <div id="titulo_caixa_texto_cadastrese">
+                    <h1> Apresente sua Demanda </h1>
                 </div>
-                <!-- informações de contato-->
-
-                <div class="estilo_campos">
-
-                    <legend> Descrição de Detalhes:</legend>
-                    <div>
-                    <input type="text" name="Descrição de Detalhes" size="40" /> 
-                    
-                    <div id="estilo_botoes">
-                        <input type="reset" value="Limpar">
-                        <input type="submit" value="Enviar Dados" onclick="efeitos()">
-                    </div>
-                </fieldset>
-            </form>
+                <div id="main_index">
+                    <!-- informações de dados pessoais sensiveis-->
+                    <form id="estilo_formulario" action="cadastrese.php">
+                        <fieldset class="estilo_campos">
+                            <legend> Dados Pessoais:</legend>
+                            <fieldset class="estilo_campos">
+        
+                            <legend> Dados de Acesso:</legend>
+                           
+                            <label for="email"> E-mail:</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" minlength="4" maxlength="8" required>
+        
+                            <div>
+                                <input type="radio" name="cpf" id="cpf">
+                                <label for="cpf"> Cadastro de Pessoa Física</label>
+                                <input type="radio" name="cnpj" id="cnpj">
+                                <label for="cnpj">Cadastro Nacional de Pessoa Jurídica</label>
+                            </div>
+                            <div>
+                                <label for="cpf"> CPF:</label>
+                                <input type="number" name="cpf" id="cpf">
+                                <label for="cnpj"> CNPJ</label>
+                                <input type="number" name="cnpj" id="cnpj">
+                            </div>
+        
+                            <!-- informações de estado-->
+        
+                            <div class="estilo_input">
+                                <label for="estado">Estado:</label>
+                                <select name="estado" id="estado">
+                                    <option value="espirito_santo">ES</option>
+                                    <option value="tocantins">TO</option>
+                                    <option value="minas_gerais">MG</option>
+                                    <option value="rio_de_janeiro">RJ</option>
+                                    <option value="sao_paulo">SP</option>
+                                    <option value="santa_catarina"> SC</option>
+                                </select>
+                            </div>
+                            <div>
+                                <legend> Deseja: </legend>
+                                <input type="radio" name="proponente" id="proponente">
+                                <label for="proponente">Propor Demanda</label>
+                                <input type="radio" name="aceitante" id="aceitante">
+                                <label for="aceitante">Aceitar Demanda</label><br>
+                            </div>
+                       
+                        <div class="estilo_formulario">
+                            <!-- informações gerais de serviço-->
+                            <legend> Serviços :</legend>
+                            <input type="checkbox" id="cartorio" name="cartorio" value="cartorio">
+                            <label for="cartorio"> Cartório</label><br>
+                            <input type="checkbox" id="preposto" name="preposto" value="preposto">
+                            <label for="preposto"> Preposto</label><br>
+                            <input type="checkbox" id="consultoria" name="consultoria" value="consultoria">
+                            <label for="consultoria"> Consultoria Jurídica</label><br>
+                            <input type="checkbox" id="parecer" name="parecer" value="parecer">
+                            <label for="parecer"> Parecer Jurídico</label><br>
+                            <input type="checkbox" id="retirada" name="retirada" value="retirada">
+                            <label for="retirada"> Retidada de Documentos</label><br>
+                            <input type="checkbox" id="entrega" name="entrega" value="entrega">
+                            <label for="entrega"> Entrega de Documentos</label><br>
+                        </div>
+                        <!-- informações de contato-->
+        
+                        <div class="estilo_campos">
+        
+                            <legend> Descrição de Detalhes:</legend>
+                            <div>
+                            <input type="text" name="Descrição de Detalhes" size="40" /> 
+                            
+                            <div id="estilo_botoes">
+                                <input type="reset" value="Limpar">
+                                <input type="submit" value="Enviar Dados" onclick="efeitos()">
+                            </div>
+                        </fieldset>
+                    </form>
           <!-- Imagem de fundo da pagina-->
         <div>
             <img src="imagens/adv.png" height="500px" width="600px" >

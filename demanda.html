@@ -83,7 +83,7 @@
     </header>
     <main>
         <div id="titulo_caixa_texto_cadastrese">
-            <h1> Cadastre-se </h1>
+            <h1> Apresente sua Demanda </h1>
         </div>
         <div id="main_index">
             <!-- informações de dados pessoais sensiveis-->
@@ -93,8 +93,7 @@
                     <fieldset class="estilo_campos">
 
                     <legend> Dados de Acesso:</legend>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone">
+                   
                     <label for="email"> E-mail:</label>
                     <input type="email" name="email" id="email" required>
                     <label for="senha">Senha:</label>
@@ -116,10 +115,7 @@
                     <!-- informações de sexo-->
 
                     <div>
-                        <input type="radio" name="sexo" id="sexo_masculino">
-                        <label for="sexo_masculino">Sexo Masculino</label>
-                        <input type="radio" name="sexo" id="sexo_feminino">
-                        <label for="sexo_masculino">Sexo Feminino</label>
+                       
                     </div>
 
                     <!-- informações de estado-->
@@ -165,13 +161,9 @@
                 <fieldset class="estilo_campos">
 
                     <legend> Dados de Acesso:</legend>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone">
-                    <label for="email"> E-mail:</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" minlength="4" maxlength="8" required>
-
+                    <div>
+                    <input type="text" name="Descrição de Detalhes" size="40" /> 
+                    
                     <div id="estilo_botoes">
                         <input type="reset" value="Limpar">
                         <input type="submit" value="Enviar Dados" onclick="efeitos()">

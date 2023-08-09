@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADV Demandas Juridicas Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.11.0/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+        function efeitos() {
+            const defaults = {
+                spread: 360,
+                ticks: 200,
+                gravity: 0,
+                decay: 0.90,
+                startVelocity: 30,
+            };
+
+            function shoot() {
+                confetti({
+                    ...defaults,
+                    particleCount: 30,
+                    scalar: 1.2,
+                    shapes: ["circle", "square"],
+                    colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+                });
+
+                confetti({
+                    ...defaults,
+                    particleCount: 20,
+                    scalar: 2,
+                    shapes: ["text"],
+                    shapeOptions: {
+                        text: {
+                            value: ["👨‍⚖️⚖️🎉👏🧑‍"],
+                        },
+                    },
+                });
+            }
+
+            setTimeout(shoot, 0);
+            setTimeout(shoot, 100);
+            setTimeout(shoot, 200);
+        }
+        function msg() {
+            alert(" Cadastre-se ! Seja Bem Vindo e Desfrute dos  Serviços Jurídicos Digitais do ADV Demandas Juridicas Online!!!");
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div id="estilo1_cabecalho"> <!-- 1ª PARTE DO CABEÇALHO -->
+            <a id="estilo_link_home" href="index.html">
+                <div id="caixa_tamanho_logo">
+                    <img src="imagens/deusa1.png" width="100%" height="100%">
+                </div>
+            </a>
+        </div>
+
+        <nav> <!-- 2ª PARTE DO CABEÇALHO -->
+            <a id="estilo_links_nav" href="cadastre-se.html">Cadastre-se</a>
+            <a id="estilo_links_nav" href="servicos.html">Serviços Ofertados</a>
+            <a id="estilo_links_nav" href="beneficios.html">Benefícios</a>
+            <a id="estilo_links_nav" href="demanda.html">Apresente sua Demanda</a>
+            <a id="estilo_links_nav" href="sobre.html"> Sobre</a>
+        </nav>
+
+        <section id="cabecalho3"> <!-- 3ª PARTE DO CABEÇALHO -->
+            <div>
+                <h3>Contatos:</h3>
+            </div>
+            <a class="estilo_links_contatos" href="">
+                <div class="caixa_tamanho_contatos">
+                    <img src="imagens/instagram_logo.png" width="100%" height="100%">
+                </div>
+            </a>
+            <a class="estilo_links_contatos" href="">
+                <div class="caixa_tamanho_contatos">
+                    <img src="imagens/whatsapp_logo.png" width="100%" height="100%">
+                </div>
+            </a>
+        </section>
+    </header>
+    <main>
+            <div id="titulo_caixa_texto">
+                <h1> Serviços Ofertados </h1>
+            </div>
+        <main id="main_index">
+            <div id="caixa_corpo_texto_servicos">
+                <strong>Em um contexto de segurança jurídica bem estabelecida, as pessoas têm a capacidade de planejar suas ações e
+                tomar decisões com base em regras claras e estáveis. Isso abrange desde o cumprimento de contratos até a
+                realização de investimentos de longo prazo. A confiança na aplicação justa e imparcial das leis é um
+                incentivo para o empreendedorismo, a inovação e o crescimento econômico, uma vez que os indivíduos se sentem
+                protegidos contra arbitrariedades e incertezas.
+
+                A segurança jurídica também é essencial para a manutenção da paz social e para a proteção dos direitos
+                fundamentais dos cidadãos. Quando as regras são claras e estáveis, as possíveis fontes de conflito são
+                reduzidas, uma vez que todos têm uma compreensão comum do que é permitido e proibido. Além disso, a
+                segurança jurídica assegura que os direitos humanos e individuais sejam respeitados e protegidos, evitando
+                abusos de poder e garantindo que todos sejam tratados com igualdade perante a lei.
+
+                No entanto, a construção e manutenção da segurança jurídica não são tarefas simples. Requerem um sistema
+                judicial eficiente e independente, legislação clara e coerente, além de mecanismos de controle e revisão
+                para garantir que as decisões tomadas estejam em conformidade com a Constituição e os princípios
+                fundamentais do ordenamento jurídico. Também exige uma cultura de respeito ao Estado de Direito por parte de
+                todos os setores da sociedade, incluindo autoridades governamentais, empresas e cidadãos.</strong>
+            </div>
+                <!-- Serviços prestados-->
+            <form id="estilo_formulario">
+                <fieldset class="estilo_campos_servicos">
+                        <input type="button" value="Cartório" onclick="msg()">
+                        <input type="button" value="Consultorias Juridicas" onclick="msg()">
+                        <input type="button" value="Entrega de Documento" onclick="msg()">
+                        <input type="button" value="Retirada de Documento " onclick="msg()">
+                        <input type="button" value="Parecer Jurídico" onclick="msg()">
+                        <input type="button" value="Preposto" onclick="msg()">
+                    
+                </fieldset>    
+            </form>
+            <div id="img_site">
+                    <img id="estilo_imagem" src="imagens/martelo.png">
+
+            </div>
+    </main>
+    <footer>
+
+        <div id="estilo1_rodape">
+            <p class="titulo">
+                <strong>Nossa Missão</strong> <br> Uma plataforma desenvolvida com objetivo de aproximar prestadores de
+                serviços no campo jurídico e clientes com demandas fora de sua comarca.
+            </p>
+        </div>
+
+        <div id="estilo3_rodape">
+            <h2> Telefones:</h2>
+            <p> (27)98872-7514/ <br> (27)99865-0625</p>
+        </div>
+
+        <div id="estilo2_rodape">
+            <h2> Desenvolvido por Claudiene Nascimento</h2>
+        </div>
+    </footer>
+</body>
+
+</html>

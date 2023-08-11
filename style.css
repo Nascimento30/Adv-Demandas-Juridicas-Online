@@ -36,7 +36,7 @@ nav{
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-between;
     gap: 50px;
     flex-direction: row;
 }
@@ -142,24 +142,48 @@ footer{
     flex-direction: inherit;
 }
 #caixa_corpo_texto{
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 700px;
     text-align: justify;
     font-family:'Arial Narrow Bold' 36px;
     color:  rgb(88, 56, 7);
-    gap: 5px;
+    gap: 10px;
     display:flex;
     
 }
 #caixa_corpo_texto_servicos{
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 700px;
     text-align: justify;
     font-family:'Arial Narrow Bold' 36px;
     color:  rgb(88, 56, 7);
     gap: 5px;
     display:flex;
     flex-direction: column;
+    
+}
+#caixa_corpo_texto_beneficios{
+    width: 800px;
+    height: 800px;
+    text-align: justify;
+    font-family:'Arial Narrow Bold' 36px;
+    color:  rgb(88, 56, 7);
+    gap: 15px;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+#caixa_corpo_texto_sobre{
+    text-align: justify;
+    font-family:'Arial Narrow Bold' 36px;
+    color:  rgb(88, 56, 7);
+    gap: 15px;
+    display:flex;
+    flex-direction: row;
+    border: 25px;
+    padding: 20px;
+    width: 800px;
     
 }
 #estilo_lista{
